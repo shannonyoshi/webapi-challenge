@@ -20,7 +20,6 @@ router.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
     const actions = await ActionDB.get(id);
-    console.log(actions);
     if (actions) {
       res.status(200).json(actions);
     } else {

@@ -22,7 +22,6 @@ async function validateProjId(req, res, next) {
    const id = req.body.project_id || req.params.id;
   try {
     const project = await ProjDB.get(id);
-    console.log(project)
     if (project) {
       next();
     } else {
