@@ -26,13 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+We learned about express middleware, express router, and express convenience helpers.
+
 - [ ] Describe Middleware?
+
+Middleware are functions that run in the order they are introduced to the server. They can be used to create routes and authenticate users/posts/etc. They can validate information end processes incorrect data is given.
 
 - [ ] Describe a Resource?
 
+Everything (all of the nouns) are resources. They are accessible by URI and managed by HTTP methods
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+Status codes and messages
+
 - [ ] How can we partition our application into sub-applications?
+
+we can use express router to split up our applications into manageable chunks.
+
 
 ## Project Setup
 
